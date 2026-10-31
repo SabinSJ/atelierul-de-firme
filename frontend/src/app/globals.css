@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --background: #080d12;
+  --foreground: #f4f8fb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-sora);
+  --font-secondary: var(--font-inter);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Fundal general */
+.adf-v2 {
+  color: #f4f8fb;
+  background: #080d12;
+}
+
+/* Grila tehnică din fundal */
+.adf-hero-book::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.17;
+
+  background-image:
+    linear-gradient(rgba(137, 190, 209, 0.11) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(137, 190, 209, 0.11) 1px, transparent 1px);
+
+  background-size: 68px 68px;
+
+  mask-image: linear-gradient(
+    90deg,
+    transparent 5%,
+    #000 76%,
+    transparent 100%
+  );
+
+  z-index: 0;
+}
+
+/* Formă geometrică oblică în dreapta */
+.adf-hero-book::after {
+  content: "";
+  position: absolute;
+  right: -8%;
+  top: 10%;
+  width: 45%;
+  height: 75%;
+
+  border: 1px solid rgba(0, 198, 255, 0.3);
+
+  transform: skewY(-18deg);
+
+  box-shadow:
+    -30px 25px 0 rgba(0, 198, 255, 0.035),
+    -60px 50px 0 rgba(0, 198, 255, 0.025);
+
+  pointer-events: none;
+  opacity: 0.3;
+  z-index: 0;
+}
