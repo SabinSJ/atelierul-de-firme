@@ -49,6 +49,10 @@ export default function IdBook() {
       <HTMLFlipBook
         width={480}
         height={340}
+        minWidth={480}
+        maxWidth={480}
+        minHeight={340}
+        maxHeight={340}
         size="fixed"
         showCover
         autoSize={false}
@@ -60,7 +64,6 @@ export default function IdBook() {
         style={{}}
         startPage={0}
         startZIndex={0}
-        // autoSize
         maxShadowOpacity={0.5}
         clickEventForward
         useMouseEvents
