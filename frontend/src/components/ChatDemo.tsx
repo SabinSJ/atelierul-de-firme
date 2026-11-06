@@ -71,7 +71,7 @@ const ChatDemo = () => {
             Vezi datele de contact ↗
           </a>
 
-          <p className="mt-4 text-[10px] leading-relaxed text-white/40">
+          <p className="mt-4 text-[11px] leading-relaxed text-white/70">
             Aceasta este o demonstrație interactivă, nu un chatbot AI activ. Nu
             colectează și nu transmite mesaje.
           </p>

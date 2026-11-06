@@ -21,9 +21,9 @@ const Sidebar = () => {
           onClick={() => setIsMenuOpen(false)}
           className="group flex items-center gap-3 rounded-r-md border-l-2 border-transparent px-3 py-2.5 text-sm text-white/70 transition-colors hover:border-[#00c6ff] hover:bg-[#13212a] hover:text-white"
         >
-          <span className="text-[10px] font-medium tracking-wider text-[#39C5D8]">
+          {/* <span className="text-[10px] font-medium tracking-wider text-[#39C5D8]">
             {String(index + 1).padStart(2, "0")}
-          </span>
+          </span> */}
 
           <span>{label}</span>
         </Link>
