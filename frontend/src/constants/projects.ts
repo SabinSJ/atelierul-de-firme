@@ -12,6 +12,7 @@ export type Project = {
   services?: string[];
   gallery?: string[];
   showcaseImages?: string[];
+  special?: boolean;
 };
 
 export const projects: Project[] = [
@@ -116,6 +117,7 @@ export const projects: Project[] = [
       "/images/projects/ormco/randari/randare7.jpeg",
       "/images/projects/ormco/randari/randare8.jpeg",
     ],
+    special: true,
   },
   {
     slug: "royal-n",
